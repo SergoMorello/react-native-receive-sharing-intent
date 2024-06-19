@@ -22,8 +22,7 @@ public class ReceiveSharingIntentModule extends ReactContextBaseJavaModule {
   public ReceiveSharingIntentModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
-    Application applicationContext = (Application) reactContext.getApplicationContext();
-    receiveSharingIntentHelper = new ReceiveSharingIntentHelper(applicationContext);
+	receiveSharingIntentHelper = new ReceiveSharingIntentHelper(reactContext);
   }
 
 
