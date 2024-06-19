@@ -1,18 +1,22 @@
+export interface IReturnData {
+    filePath?: string | null,
+    text?: string | null,
+    weblink?: string | null,
+    mimeType?: string | null,
+    contentUri?: string | null,
+    fileName?: string | null, 
+    extension?: string | null,
+}
+
+export type TReceiveSharingCallbackParams = IReturnData & {
+	base64: string;
+};
 
 export interface IReceiveSharing{
-    getReceivedFiles(handler: Function , errorHandler: Function, protocol: string ): void,
+    getReceivedFiles(handler: (params: TReceiveSharingCallbackParams) => void , errorHandler: (error: string) => void, protocol: string ): void,
 }
 
 export interface IUtils{
     sortData(data: any): any
 }
 
-export interface IReturnData{
-    filePath?: any | string,
-    text?: any | string,
-    weblink?: any | string,
-    mimeType?: any | string,
-    contentUri?: any | string,
-    fileName?: any | string, 
-    extension?: any | string,
-}
