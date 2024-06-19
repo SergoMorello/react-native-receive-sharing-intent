@@ -9,14 +9,18 @@ export interface IReturnData {
 }
 
 export type TReceiveSharingCallbackParams = IReturnData & {
-	base64: string;
+	base64?: string;
 };
 
+export type TReceiveSharingCallback = (params: TReceiveSharingCallbackParams) => void;
+
+export type TReceiveSharingCallbackError = (error: string) => void;
+
 export interface IReceiveSharing{
-    getReceivedFiles(handler: (params: TReceiveSharingCallbackParams) => void , errorHandler: (error: string) => void, protocol: string ): void,
+    getReceivedFiles(handler: TReceiveSharingCallback , errorHandler: TReceiveSharingCallbackError, protocol: string ): void,
 }
 
 export interface IUtils{
-    sortData(data: any): any
+    sortData(data: any): IReturnData | IReturnData[];
 }
 

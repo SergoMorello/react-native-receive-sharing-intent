@@ -8,12 +8,14 @@ export interface IReturnData {
     extension?: string | null;
 }
 export declare type TReceiveSharingCallbackParams = IReturnData & {
-    base64: string;
+    base64?: string;
 };
+export declare type TReceiveSharingCallback = (params: TReceiveSharingCallbackParams) => void;
+export declare type TReceiveSharingCallbackError = (error: string) => void;
 export interface IReceiveSharing {
-    getReceivedFiles(handler: (params: TReceiveSharingCallbackParams) => void, errorHandler: (error: string) => void, protocol: string): void;
+    getReceivedFiles(handler: TReceiveSharingCallback, errorHandler: TReceiveSharingCallbackError, protocol: string): void;
 }
 export interface IUtils {
-    sortData(data: any): any;
+    sortData(data: any): IReturnData | IReturnData[];
 }
 //# sourceMappingURL=ReceiveSharingIntent.interfaces.d.ts.map

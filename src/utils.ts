@@ -3,7 +3,7 @@ import MimeTypes from './mimeTypes';
 
 class Utils implements IUtils{
 
-    sortData(data: any): Array<IReturnData> {
+    sortData(data: any): IReturnData[] {
         const objects: IReturnData = { filePath: null, text: null, weblink: null, mimeType: null, contentUri: null, fileName: null, extension: null };
         const file = data;
         if (file.startsWith('text:')) {

@@ -1,4 +1,8 @@
-import type { IReceiveSharing, IUtils } from "./ReceiveSharingIntent.interfaces";
+import type {
+	IReceiveSharing,
+	IUtils,
+	TReceiveSharingCallback
+} from "./ReceiveSharingIntent.interfaces";
 import { Platform, Linking, AppState, NativeModules } from "react-native";
 import  Utils from "./utils";
 
@@ -9,7 +13,7 @@ class ReceiveSharingModule implements IReceiveSharing {
     private utils: IUtils = new Utils();
     private isClear: boolean = false;
 
-    getReceivedFiles(handler: Function, errorHandler: Function, protocol: string = "ShareMedia"){
+    getReceivedFiles(handler: TReceiveSharingCallback, errorHandler: (error: string) => void, protocol: string = "ShareMedia"){
         if(this.isIos){
             Linking.getInitialURL().then((res:any) => {
                 if (res && res.startsWith(`${protocol}://dataUrl`) && !this.isClear) {
