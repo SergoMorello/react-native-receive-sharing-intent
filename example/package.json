@@ -1,6 +1,6 @@
 {
-  "name": "react-native-receive-sharing-intent-example",
-  "description": "Example app for react-native-receive-sharing-intent",
+  "name": "react-native-receive-sharing-example",
+  "description": "Example app for react-native-receive-sharing",
   "version": "0.0.1",
   "private": true,
   "scripts": {

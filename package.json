@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-receive-sharing-intent.podspec",
+    "react-native-receive-sharing.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -34,13 +34,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/ajith-ab/react-native-receive-sharing-intent",
+  "repository": "https://github.com/ajith-ab/react-native-receive-sharing",
   "author": "Ajith A B <ajith4ab@gmail.com> (https://github.com/ajith-ab)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ajith-ab/react-native-receive-sharing-intent/issues"
+    "url": "https://github.com/ajith-ab/react-native-receive-sharing/issues"
   },
-  "homepage": "https://github.com/ajith-ab/react-native-receive-sharing-intent#readme",
+  "homepage": "https://github.com/ajith-ab/react-native-receive-sharing#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

@@ -527,7 +527,7 @@
 		ADB5DE8024F692E98A09D0EEB705157C /* RCTUIManagerObserverCoordinator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 643A15948867743E690534DBE881713D /* RCTUIManagerObserverCoordinator.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		ADCA50B2FB704622F9056804BC882071 /* FBReactNativeSpec-generated.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B2916D6F2A39D42B4DA1C9F5EBA792F /* FBReactNativeSpec-generated.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-nullability-completeness"; }; };
 		AE6BB57235EAF74D2B94911A024374F4 /* RCTComponentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 593EE7A97B47AEC7D81CFF47A2F35A2F /* RCTComponentData.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
-		AEBBBCB061933B0D0E8E0A7C6EC1F4B5 /* react-native-receive-sharing-intent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C4A0DFB4317F5BFB9C9CF4E6217A2B /* react-native-receive-sharing-intent-dummy.m */; };
+		AEBBBCB061933B0D0E8E0A7C6EC1F4B5 /* react-native-receive-sharing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C4A0DFB4317F5BFB9C9CF4E6217A2B /* react-native-receive-sharing-dummy.m */; };
 		AFCB8E8FFA156751C6A4158497A7E2DD /* RCTPackagerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = F5110D67C9926FC7C4A190C539EB30F3 /* RCTPackagerConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AFD218E6CE42D977B4C6062356931037 /* RCTImagePlugins.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5817E0111E21AA20DB3C2FFB48E3154 /* RCTImagePlugins.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-nullability-completeness"; }; };
 		AFEBCB43EEF1A16F021F7DC83A8BF1B0 /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A665648A54D88C128FEE6F28AE41867 /* json.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_PTHREAD=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
@@ -731,7 +731,7 @@
 		F03F0EF1A5EDA342398B722D9ECB6DA2 /* RAMBundleRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = C9192148C32D6B36E997D8EED06CFA2E /* RAMBundleRegistry.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F10066FFFCB05691561796C75A21D831 /* fixed-dtoa.cc in Sources */ = {isa = PBXBuildFile; fileRef = 17629DEEB0057022BD49FC6D594A226F /* fixed-dtoa.cc */; settings = {COMPILER_FLAGS = "-Wno-unreachable-code"; }; };
 		F1D55AC2C32820B7060D3792FC6C1BDB /* RCTTypedModuleConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D86CA1D7B1A24DD2B0117729A092248 /* RCTTypedModuleConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F2189473C90A479385F86F40F9E9DF14 /* react-native-receive-sharing-intent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 783F9D1620F2CD7907CC37563884CE8A /* react-native-receive-sharing-intent-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2189473C90A479385F86F40F9E9DF14 /* react-native-receive-sharing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 783F9D1620F2CD7907CC37563884CE8A /* react-native-receive-sharing-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F26601560D23AB5F9B9D06E5FC34F69E /* JSExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BE54B634BD78ED20ECD745BF41154A /* JSExecutor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F2EB846DF7325FAA61507E910C036032 /* RCTWebSocketExecutor.mm in Sources */ = {isa = PBXBuildFile; fileRef = A844958915E666ABDF38CAC420A662C3 /* RCTWebSocketExecutor.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-nullability-completeness"; }; };
 		F35978EE10EC7E43A4A37AD23C2A9945 /* RCTAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = A41826D6AFE20C7677EAB93A1DDC5BC4 /* RCTAssert.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1563,7 +1563,7 @@
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C7A8C80C39AC99C15087825B83609949;
-			remoteInfo = "react-native-receive-sharing-intent";
+			remoteInfo = "react-native-receive-sharing";
 		};
 		D99D3D0F899A66103C38D157F95F6E82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1908,7 +1908,7 @@
 		4719D505B0D0D2B98F6F83D2EF959ABF /* RCTAnimationDriver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAnimationDriver.h; sourceTree = "<group>"; };
 		472E455C11DFE323FD3F1C49E905859E /* React-RCTVibration.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "React-RCTVibration.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		473F8C3521A7718C5F63CC826456B05F /* String.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = String.cpp; path = folly/String.cpp; sourceTree = "<group>"; };
-		47AB593194186941DE4F9402F5BBF9F0 /* react-native-receive-sharing-intent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-receive-sharing-intent.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		47AB593194186941DE4F9402F5BBF9F0 /* react-native-receive-sharing.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-receive-sharing.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		47DE4BEC7531AFA8169B9A687DEA7C63 /* RCTUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUtils.h; sourceTree = "<group>"; };
 		484588E6E0035208309804319DD1D135 /* RCTSettingsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTSettingsManager.h; path = Libraries/Settings/RCTSettingsManager.h; sourceTree = "<group>"; };
 		48774403DA1B0937C643294E67F37F1A /* RCTFont.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTFont.mm; sourceTree = "<group>"; };
@@ -1972,7 +1972,7 @@
 		595BD713B97A65B01588D875734C0DA2 /* JsArgumentHelpers-inl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JsArgumentHelpers-inl.h"; sourceTree = "<group>"; };
 		5989498533DA3996823070886876CB11 /* React-CoreModules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "React-CoreModules.debug.xcconfig"; sourceTree = "<group>"; };
 		59B20BDA82AEBBD2878B3729EC513394 /* RCTImageStoreManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTImageStoreManager.mm; sourceTree = "<group>"; };
-		59C4A0DFB4317F5BFB9C9CF4E6217A2B /* react-native-receive-sharing-intent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-receive-sharing-intent-dummy.m"; sourceTree = "<group>"; };
+		59C4A0DFB4317F5BFB9C9CF4E6217A2B /* react-native-receive-sharing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-receive-sharing-dummy.m"; sourceTree = "<group>"; };
 		59FE980312B0BC7786C3B0D107E384D8 /* RCTBaseTextInputViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBaseTextInputViewManager.m; sourceTree = "<group>"; };
 		5A0EE5138541E646855F39F747AB0ED2 /* JSCExecutorFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JSCExecutorFactory.h; sourceTree = "<group>"; };
 		5A37B672EF3A1FD309AE2897CCC1B490 /* logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging.h; path = src/glog/logging.h; sourceTree = "<group>"; };
@@ -2002,7 +2002,7 @@
 		643A15948867743E690534DBE881713D /* RCTUIManagerObserverCoordinator.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTUIManagerObserverCoordinator.mm; sourceTree = "<group>"; };
 		652901C648F1BDA57693B851CECE1379 /* fast-dtoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "fast-dtoa.h"; path = "double-conversion/fast-dtoa.h"; sourceTree = "<group>"; };
 		655A4B3B0164E70F1E5B4F2F15232CEB /* React-jsiexecutor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "React-jsiexecutor-dummy.m"; sourceTree = "<group>"; };
-		65877295AA74A9BC4187A1A4D250B1FC /* react-native-receive-sharing-intent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-receive-sharing-intent-prefix.pch"; sourceTree = "<group>"; };
+		65877295AA74A9BC4187A1A4D250B1FC /* react-native-receive-sharing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-receive-sharing-prefix.pch"; sourceTree = "<group>"; };
 		6595D5E1908836E7CF51AF44371E44D3 /* RCTInputAccessoryViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTInputAccessoryViewManager.h; sourceTree = "<group>"; };
 		65B6C171861D466BF91AD8DE8C9E7C68 /* bignum.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = bignum.cc; path = "double-conversion/bignum.cc"; sourceTree = "<group>"; };
 		65BECAC80C103D0FCF79D6B214181216 /* React-RCTText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "React-RCTText.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2065,7 +2065,7 @@
 		778E01A56D934F9CBFFC9A0E6FB88A79 /* RCTNativeModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTNativeModule.h; sourceTree = "<group>"; };
 		778FA8F6ACAC0F267BCC432EB5D1B900 /* RCTDiffClampAnimatedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDiffClampAnimatedNode.m; sourceTree = "<group>"; };
 		77C47AA900A52BAAE22BFAF0CD632D8E /* FBReactNativeSpec.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FBReactNativeSpec.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		783F9D1620F2CD7907CC37563884CE8A /* react-native-receive-sharing-intent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-receive-sharing-intent-umbrella.h"; sourceTree = "<group>"; };
+		783F9D1620F2CD7907CC37563884CE8A /* react-native-receive-sharing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-receive-sharing-umbrella.h"; sourceTree = "<group>"; };
 		78B168B8B417B9B3D6F7F28FB0C61BB5 /* RCTReloadCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTReloadCommand.m; sourceTree = "<group>"; };
 		78CCE7C08F01CCC07B210E7B8CF6AD6B /* RCTLogBox.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTLogBox.mm; sourceTree = "<group>"; };
 		792954814EDE2061EA4F7FD379437604 /* RCTSurfaceView+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTSurfaceView+Internal.h"; sourceTree = "<group>"; };
@@ -2117,7 +2117,7 @@
 		88531F2BF1C03207665982068C66E7C3 /* RCTNativeAnimatedModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTNativeAnimatedModule.h; path = Libraries/NativeAnimation/RCTNativeAnimatedModule.h; sourceTree = "<group>"; };
 		88E80EED21A91BB51AAB993EE799750A /* RCTAnimationType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAnimationType.h; sourceTree = "<group>"; };
 		8915A1203ED3A6196B4351EA8FD0924E /* JSBundleType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JSBundleType.h; sourceTree = "<group>"; };
-		8942B23630A8594ACFA9424859ECEB19 /* libreact-native-receive-sharing-intent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libreact-native-receive-sharing-intent.a"; path = "libreact-native-receive-sharing-intent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8942B23630A8594ACFA9424859ECEB19 /* libreact-native-receive-sharing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libreact-native-receive-sharing.a"; path = "libreact-native-receive-sharing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B061F072D5AC5BF0F5CB7F5D76856E /* RCTSourceCode.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSourceCode.mm; sourceTree = "<group>"; };
 		8A56B84864D6DE27784D4DC6A8FFD6CC /* RCTFollyConvert.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTFollyConvert.mm; sourceTree = "<group>"; };
 		8A92B1CBC1CFA83EFC70B95B7E3A4034 /* RCTErrorInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTErrorInfo.h; sourceTree = "<group>"; };
@@ -2236,7 +2236,7 @@
 		B001A9D6391FFD1C384F521CC074E0F4 /* RCTReloadCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTReloadCommand.h; sourceTree = "<group>"; };
 		B10D0D513E9A3F5738BA121D51734D09 /* RCTActivityIndicatorViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTActivityIndicatorViewManager.h; sourceTree = "<group>"; };
 		B115A93753D6EB990E6C0C6061062C66 /* JSModulesUnbundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JSModulesUnbundle.h; sourceTree = "<group>"; };
-		B143F2BCD46CF895B6E20F88D1BBA5D4 /* react-native-receive-sharing-intent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "react-native-receive-sharing-intent.modulemap"; sourceTree = "<group>"; };
+		B143F2BCD46CF895B6E20F88D1BBA5D4 /* react-native-receive-sharing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "react-native-receive-sharing.modulemap"; sourceTree = "<group>"; };
 		B23DB72C2CCC54D83FFDAAB6EDDA8B6B /* RCTImageBlurUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTImageBlurUtils.h; path = Libraries/Image/RCTImageBlurUtils.h; sourceTree = "<group>"; };
 		B2A1D36D16BC4E1D3411E926B3E1E3AB /* RCTBaseTextShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBaseTextShadowView.m; sourceTree = "<group>"; };
 		B342E5E25F2036FECE30566AF4263A43 /* RCTBaseTextViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBaseTextViewManager.m; sourceTree = "<group>"; };
@@ -2280,7 +2280,7 @@
 		BD71E2539823621820F84384064C253A /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libReact-Core.a"; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD822BE134560DCDFC37D76D1251E6F6 /* RCTImagePlugins.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTImagePlugins.h; path = Libraries/Image/RCTImagePlugins.h; sourceTree = "<group>"; };
 		BD9121F8C9C4835ED501FB81EB74057B /* RCTSurfaceSizeMeasureMode.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurfaceSizeMeasureMode.mm; sourceTree = "<group>"; };
-		BDC651B1C26BCEE911BC4767C605848B /* react-native-receive-sharing-intent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-receive-sharing-intent.debug.xcconfig"; sourceTree = "<group>"; };
+		BDC651B1C26BCEE911BC4767C605848B /* react-native-receive-sharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-receive-sharing.debug.xcconfig"; sourceTree = "<group>"; };
 		BFD547C131CE043A02DDD91BA9349D32 /* RCTAdditionAnimatedNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAdditionAnimatedNode.h; sourceTree = "<group>"; };
 		C024300EB77EE1D0DC3D8C3C07670382 /* JsArgumentHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JsArgumentHelpers.h; sourceTree = "<group>"; };
 		C04CB5ABD9C300B0519F23CFB88BDD65 /* vlog_is_on.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vlog_is_on.h; path = src/glog/vlog_is_on.h; sourceTree = "<group>"; };
@@ -2466,7 +2466,7 @@
 		F5110D67C9926FC7C4A190C539EB30F3 /* RCTPackagerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTPackagerConnection.h; sourceTree = "<group>"; };
 		F5370C4EBDE85A5270AB7D4892022D95 /* UniqueInstance.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = UniqueInstance.cpp; path = folly/detail/UniqueInstance.cpp; sourceTree = "<group>"; };
 		F5EB42D7D7A15C0DFC7B1245CC55ACD0 /* RCTConvertHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTConvertHelpers.h; sourceTree = "<group>"; };
-		F61DEA236E97EFC6E3889403DD4730B4 /* react-native-receive-sharing-intent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-receive-sharing-intent.release.xcconfig"; sourceTree = "<group>"; };
+		F61DEA236E97EFC6E3889403DD4730B4 /* react-native-receive-sharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-receive-sharing.release.xcconfig"; sourceTree = "<group>"; };
 		F632D09AE954E2B256C383A86CCDEBB1 /* RCTAnimationUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAnimationUtils.m; sourceTree = "<group>"; };
 		F71EBF73F354B475D465FF6DE9A66707 /* libReact-RCTBlob.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libReact-RCTBlob.a"; path = "libReact-RCTBlob.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7432F3938CF8D318D47213966B08914 /* RCTLocalAssetImageLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTLocalAssetImageLoader.h; path = Libraries/Image/RCTLocalAssetImageLoader.h; sourceTree = "<group>"; };
@@ -2702,7 +2702,7 @@
 				D9F334F2E90E3EE462FC4192AF5C03BD /* libReact-jsi.a */,
 				F2E7C88DFCD460A4B46B913ADEB8A641 /* libReact-jsiexecutor.a */,
 				2577F299FCB0A19824FE989BE77B8E8F /* libReact-jsinspector.a */,
-				8942B23630A8594ACFA9424859ECEB19 /* libreact-native-receive-sharing-intent.a */,
+				8942B23630A8594ACFA9424859ECEB19 /* libreact-native-receive-sharing.a */,
 				FE7B9294FF05AAFD1653E2104E10844A /* libReact-RCTAnimation.a */,
 				F71EBF73F354B475D465FF6DE9A66707 /* libReact-RCTBlob.a */,
 				EEDBF403E8E0B3885E65C2741B536BC5 /* libReact-RCTImage.a */,
@@ -2862,7 +2862,7 @@
 			isa = PBXGroup;
 			children = (
 				1F2329F9E028AEF1404B9387095955C2 /* LICENSE */,
-				47AB593194186941DE4F9402F5BBF9F0 /* react-native-receive-sharing-intent.podspec */,
+				47AB593194186941DE4F9402F5BBF9F0 /* react-native-receive-sharing.podspec */,
 				9BB92BB4BA36E7CA925C77ABB5E19BB0 /* README.md */,
 			);
 			name = Pod;
@@ -3528,15 +3528,15 @@
 		68684084C7F242FFEFB10F7DF6E14981 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B143F2BCD46CF895B6E20F88D1BBA5D4 /* react-native-receive-sharing-intent.modulemap */,
-				59C4A0DFB4317F5BFB9C9CF4E6217A2B /* react-native-receive-sharing-intent-dummy.m */,
-				65877295AA74A9BC4187A1A4D250B1FC /* react-native-receive-sharing-intent-prefix.pch */,
-				783F9D1620F2CD7907CC37563884CE8A /* react-native-receive-sharing-intent-umbrella.h */,
-				BDC651B1C26BCEE911BC4767C605848B /* react-native-receive-sharing-intent.debug.xcconfig */,
-				F61DEA236E97EFC6E3889403DD4730B4 /* react-native-receive-sharing-intent.release.xcconfig */,
+				B143F2BCD46CF895B6E20F88D1BBA5D4 /* react-native-receive-sharing.modulemap */,
+				59C4A0DFB4317F5BFB9C9CF4E6217A2B /* react-native-receive-sharing-dummy.m */,
+				65877295AA74A9BC4187A1A4D250B1FC /* react-native-receive-sharing-prefix.pch */,
+				783F9D1620F2CD7907CC37563884CE8A /* react-native-receive-sharing-umbrella.h */,
+				BDC651B1C26BCEE911BC4767C605848B /* react-native-receive-sharing.debug.xcconfig */,
+				F61DEA236E97EFC6E3889403DD4730B4 /* react-native-receive-sharing.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "example/ios/Pods/Target Support Files/react-native-receive-sharing-intent";
+			path = "example/ios/Pods/Target Support Files/react-native-receive-sharing";
 			sourceTree = "<group>";
 		};
 		68ED88CEDB36D5CA1E2156C7BC94AE9F /* Support Files */ = {
@@ -4522,7 +4522,7 @@
 				CECDD1B176441F2FC3AF591FE5DE7EBD /* React-jsi */,
 				A5FC638A3C298AE606E3848A35F56C39 /* React-jsiexecutor */,
 				574B6A756426811F92B4D9A7F39579C7 /* React-jsinspector */,
-				F28DFBB5F6C74CCC8C737CCE985C263C /* react-native-receive-sharing-intent */,
+				F28DFBB5F6C74CCC8C737CCE985C263C /* react-native-receive-sharing */,
 				499AD9F1A32E76DD34791C99EC84A7CC /* React-RCTActionSheet */,
 				7D16CA6EBED2917E31DE22933251EC41 /* React-RCTAnimation */,
 				2138112618414CD1BA37DD0DF7D14312 /* React-RCTBlob */,
@@ -4605,7 +4605,7 @@
 			name = RCTTextHeaders;
 			sourceTree = "<group>";
 		};
-		F28DFBB5F6C74CCC8C737CCE985C263C /* react-native-receive-sharing-intent */ = {
+		F28DFBB5F6C74CCC8C737CCE985C263C /* react-native-receive-sharing */ = {
 			isa = PBXGroup;
 			children = (
 				A53189AD7D32454C1A1A691F19D1BBAE /* ReceiveSharingIntent.m */,
@@ -4614,7 +4614,7 @@
 				1F0B0A3F52CEAF1B6CFF88C0F002718D /* Pod */,
 				68684084C7F242FFEFB10F7DF6E14981 /* Support Files */,
 			);
-			name = "react-native-receive-sharing-intent";
+			name = "react-native-receive-sharing";
 			path = ../../..;
 			sourceTree = "<group>";
 		};
@@ -4765,7 +4765,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2189473C90A479385F86F40F9E9DF14 /* react-native-receive-sharing-intent-umbrella.h in Headers */,
+				F2189473C90A479385F86F40F9E9DF14 /* react-native-receive-sharing-umbrella.h in Headers */,
 				78A7928A3E001568E309D8573648AFCB /* ReceiveSharingIntent-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5585,9 +5585,9 @@
 			productReference = ABFEEA82A6C346B22843FBE0B0582182 /* libFBReactNativeSpec.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C7A8C80C39AC99C15087825B83609949 /* react-native-receive-sharing-intent */ = {
+		C7A8C80C39AC99C15087825B83609949 /* react-native-receive-sharing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2A0DA443477FAF86CED5A0D168056E9 /* Build configuration list for PBXNativeTarget "react-native-receive-sharing-intent" */;
+			buildConfigurationList = C2A0DA443477FAF86CED5A0D168056E9 /* Build configuration list for PBXNativeTarget "react-native-receive-sharing" */;
 			buildPhases = (
 				5A3B8BC22A39FCAB5CC25099B5BF8768 /* Headers */,
 				C70FFAA9CAB12708ED59970A683690A6 /* Sources */,
@@ -5599,9 +5599,9 @@
 			dependencies = (
 				749F2CF47C3E7B2866EC5DC067F54387 /* PBXTargetDependency */,
 			);
-			name = "react-native-receive-sharing-intent";
-			productName = "react-native-receive-sharing-intent";
-			productReference = 8942B23630A8594ACFA9424859ECEB19 /* libreact-native-receive-sharing-intent.a */;
+			name = "react-native-receive-sharing";
+			productName = "react-native-receive-sharing";
+			productReference = 8942B23630A8594ACFA9424859ECEB19 /* libreact-native-receive-sharing.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D0EFEFB685D97280256C559792236873 /* glog */ = {
@@ -5784,7 +5784,7 @@
 				FA877ADC442CB19CF61793D234C8B131 /* React-jsi */,
 				DA0709CAAD589C6E7963495210438021 /* React-jsiexecutor */,
 				F7D033C4C128EECAA020990641FA985F /* React-jsinspector */,
-				C7A8C80C39AC99C15087825B83609949 /* react-native-receive-sharing-intent */,
+				C7A8C80C39AC99C15087825B83609949 /* react-native-receive-sharing */,
 				11989A5E568B3B69655EE0C13DCDA3F9 /* React-RCTActionSheet */,
 				938CCE22F6C4094B3FB6CF1478579E4B /* React-RCTAnimation */,
 				95D98F901D07557EF7CA38D3F03832C5 /* React-RCTBlob */,
@@ -5821,20 +5821,20 @@
 			);
 			inputPaths = (
 				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing-intent.modulemap",
-				"${PODS_ROOT}/Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing-intent-umbrella.h",
+				"${PODS_ROOT}/Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing.modulemap",
+				"${PODS_ROOT}/Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing-umbrella.h",
 			);
 			name = "Copy generated compatibility header";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/react-native-receive-sharing-intent-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/react-native-receive-sharing-umbrella.h",
 				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing-intent.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing-intent-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -6269,7 +6269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEBBBCB061933B0D0E8E0A7C6EC1F4B5 /* react-native-receive-sharing-intent-dummy.m in Sources */,
+				AEBBBCB061933B0D0E8E0A7C6EC1F4B5 /* react-native-receive-sharing-dummy.m in Sources */,
 				E6F70B77E8C1432CD8FD3E3189C3DBFE /* ReceiveSharingIntent.m in Sources */,
 				8ECA94FA0EF1B58B219128319CAA3F16 /* ReceiveSharingIntent.swift in Sources */,
 			);
@@ -7018,8 +7018,8 @@
 		};
 		E35CC3ABDE570C4A5E1F693C10B65B71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "react-native-receive-sharing-intent";
-			target = C7A8C80C39AC99C15087825B83609949 /* react-native-receive-sharing-intent */;
+			name = "react-native-receive-sharing";
+			target = C7A8C80C39AC99C15087825B83609949 /* react-native-receive-sharing */;
 			targetProxy = D7BAEAEB8C467A425C22A91966DC157B /* PBXContainerItemProxy */;
 		};
 		E5B3A0B583DD6997422853C06CE36BF2 /* PBXTargetDependency */ = {
@@ -7288,20 +7288,20 @@
 		};
 		0EBA4A844218B3E8E039F6F2A07ED620 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F61DEA236E97EFC6E3889403DD4730B4 /* react-native-receive-sharing-intent.release.xcconfig */;
+			baseConfigurationReference = F61DEA236E97EFC6E3889403DD4730B4 /* react-native-receive-sharing.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/react-native-receive-sharing-intent/react-native-receive-sharing-intent-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/react-native-receive-sharing/react-native-receive-sharing-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MODULEMAP_FILE = "Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing-intent.modulemap";
+				MODULEMAP_FILE = "Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = react_native_receive_sharing_intent;
-				PRODUCT_NAME = "react-native-receive-sharing-intent";
+				PRODUCT_NAME = "react-native-receive-sharing";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -7353,20 +7353,20 @@
 		};
 		1A68B10EDB778C4345105A463FC092CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDC651B1C26BCEE911BC4767C605848B /* react-native-receive-sharing-intent.debug.xcconfig */;
+			baseConfigurationReference = BDC651B1C26BCEE911BC4767C605848B /* react-native-receive-sharing.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/react-native-receive-sharing-intent/react-native-receive-sharing-intent-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/react-native-receive-sharing/react-native-receive-sharing-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MODULEMAP_FILE = "Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing-intent.modulemap";
+				MODULEMAP_FILE = "Headers/Public/react_native_receive_sharing_intent/react-native-receive-sharing.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = react_native_receive_sharing_intent;
-				PRODUCT_NAME = "react-native-receive-sharing-intent";
+				PRODUCT_NAME = "react-native-receive-sharing";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -8728,7 +8728,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2A0DA443477FAF86CED5A0D168056E9 /* Build configuration list for PBXNativeTarget "react-native-receive-sharing-intent" */ = {
+		C2A0DA443477FAF86CED5A0D168056E9 /* Build configuration list for PBXNativeTarget "react-native-receive-sharing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A68B10EDB778C4345105A463FC092CE /* Debug */,

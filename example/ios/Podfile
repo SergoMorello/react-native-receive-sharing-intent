@@ -8,7 +8,7 @@ target 'ReceiveSharingIntentExample' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'react-native-receive-sharing-intent', :path => '../..'
+  pod 'react-native-receive-sharing', :path => '../..'
 
   # Enables Flipper.
   #
