@@ -18,12 +18,21 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import android.util.Base64;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import com.facebook.react.bridge.ReactApplicationContext;
+import java.io.InputStream;
+
 public class ReceiveSharingIntentHelper {
 
   private Context context;
+  private ReactApplicationContext reactContext;
 
-  public ReceiveSharingIntentHelper(Application context){
-    this.context = context;
+  public ReceiveSharingIntentHelper(ReactApplicationContext reactContext){
+
+    this.context = reactContext.getApplicationContext();
+	this.reactContext = reactContext;
   }
 
   @RequiresApi(api = Build.VERSION_CODES.KITKAT)
@@ -130,6 +139,7 @@ public class ReceiveSharingIntentHelper {
       file.putString("text",null);
       file.putString("weblink", null);
       file.putString("subject", subject);
+	  file.putString("base64", this.getBase64String(contentUri));
       files.putMap("0",file);
     }else if(Objects.equals(intent.getAction(), Intent.ACTION_SEND_MULTIPLE)) {
       ArrayList<Uri> contentUris = intent.getParcelableArrayListExtra(Intent.EXTRA_STREAM);
@@ -149,6 +159,7 @@ public class ReceiveSharingIntentHelper {
           file.putString("text",null);
           file.putString("weblink", null);
           file.putString("subject", subject);
+		  file.putString("base64", this.getBase64String(uri));
           files.putMap(Integer.toString(index),file);
           index++;
         }
@@ -157,6 +168,23 @@ public class ReceiveSharingIntentHelper {
     return  files;
   }
 
+	private String getBase64String(Uri uri) {
+        try (InputStream inputStream = this.reactContext.getContentResolver().openInputStream(uri);
+             ByteArrayOutputStream output = new ByteArrayOutputStream()) {
+            byte[] bytes;
+            byte[] buffer = new byte[8192];
+            int bytesRead;
+
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                output.write(buffer, 0, bytesRead);
+            }
+            bytes = output.toByteArray();
+            return Base64.encodeToString(bytes, Base64.NO_WRAP);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
   private String getMediaType(String url){
     String mimeType = URLConnection.guessContentTypeFromName(url);

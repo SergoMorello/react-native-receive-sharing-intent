@@ -4,6 +4,10 @@ A React Native plugin that enables React Native apps to receive sharing photos, 
 
 Also, supports iOS Share extension and launching the host app automatically. Check the provided example for more info.
 
+## Update:
+
+include base64 file encoder
+
 ## Demo
 
 | Android | Ios | 
