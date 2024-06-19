@@ -12,7 +12,7 @@ export type TReceiveSharingCallbackParams = IReturnData & {
 	base64?: string;
 };
 
-export type TReceiveSharingCallback = (params: TReceiveSharingCallbackParams) => void;
+export type TReceiveSharingCallback = (files: TReceiveSharingCallbackParams[]) => void;
 
 export type TReceiveSharingCallbackError = (error: string) => void;
 
