@@ -1,5 +1,5 @@
 {
-  "name": "react-native-receive-sharing-intent",
+  "name": "react-native-receive-sharing",
   "version": "2.0.1",
   "description": "A React Native plugin that enables React Native apps to receive sharing photos, videos, text, urls or any other file types from another app.",
   "main": "lib/commonjs/index",
@@ -24,8 +24,6 @@
   "scripts": {
     "test": "jest",
     "typescript": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
@@ -63,7 +61,7 @@
     "prettier": "^2.0.5",
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-builder-bob": "^",
+    "react-native-builder-bob": "^0.23.2",
     "release-it": "^14.2.2",
     "typescript": "^4.1.3"
   },
@@ -77,12 +75,6 @@
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
-    }
   },
   "commitlint": {
     "extends": [
