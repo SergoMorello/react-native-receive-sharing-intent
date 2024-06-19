@@ -13,7 +13,7 @@ export declare type TReceiveSharingCallbackParams = IReturnData & {
 export declare type TReceiveSharingCallback = (files: TReceiveSharingCallbackParams[]) => void;
 export declare type TReceiveSharingCallbackError = (error: string) => void;
 export interface IReceiveSharing {
-    getReceivedFiles(handler: TReceiveSharingCallback, errorHandler: TReceiveSharingCallbackError, protocol: string): void;
+    getReceivedFiles(handler: TReceiveSharingCallback, errorHandler?: TReceiveSharingCallbackError, protocol?: string): void;
 }
 export interface IUtils {
     sortData(data: any): IReturnData | IReturnData[];

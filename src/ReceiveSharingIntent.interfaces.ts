@@ -17,7 +17,7 @@ export type TReceiveSharingCallback = (files: TReceiveSharingCallbackParams[]) =
 export type TReceiveSharingCallbackError = (error: string) => void;
 
 export interface IReceiveSharing{
-    getReceivedFiles(handler: TReceiveSharingCallback , errorHandler: TReceiveSharingCallbackError, protocol: string ): void,
+    getReceivedFiles(handler: TReceiveSharingCallback , errorHandler?: TReceiveSharingCallbackError, protocol?: string ): void,
 }
 
 export interface IUtils{
