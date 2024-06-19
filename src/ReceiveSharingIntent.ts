@@ -1,10 +1,10 @@
-import type { IReceiveSharingIntent, IUtils } from "./ReceiveSharingIntent.interfaces";
+import type { IReceiveSharing, IUtils } from "./ReceiveSharingIntent.interfaces";
 import { Platform, Linking, AppState, NativeModules } from "react-native";
 import  Utils from "./utils";
 
 const { ReceiveSharingIntent } = NativeModules;
 
-class ReceiveSharingIntentModule implements IReceiveSharingIntent {
+class ReceiveSharingModule implements IReceiveSharing {
     private isIos: boolean = Platform.OS === "ios";
     private utils: IUtils = new Utils();
     private isClear: boolean = false;
@@ -54,4 +54,4 @@ class ReceiveSharingIntentModule implements IReceiveSharingIntent {
     
 }
 
-export default ReceiveSharingIntentModule;
+export default ReceiveSharingModule;

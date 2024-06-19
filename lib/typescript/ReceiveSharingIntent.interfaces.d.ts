@@ -1,4 +1,4 @@
-export interface IReceiveSharingIntent {
+export interface IReceiveSharing {
     getReceivedFiles(handler: Function, errorHandler: Function, protocol: string): void;
 }
 export interface IUtils {
